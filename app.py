@@ -23,7 +23,7 @@ def add_product(name , price) :
       val = (name, price)
       mycursor.execute(sql, val)
       mydb.commit()
-      print("add seccesfully :")
+      print("add succesfully :")
 
 def remove_product(name) :
       sql = "DELETE FROM products WHERE name = %s"
@@ -61,12 +61,12 @@ while True :
       name = input("send productName :")
       price = input("send price :")
       add_product(name , price)
-      print("added succesfully")
+      print("added successfully")
 #remove product
     elif choice == 2:
       name = input("send productName :")
       remove_product(name)
-      print("removed seccesfully :")
+      print("removed successfully :")
 #show all products
     elif choice == 3 :
       show_product()
@@ -78,7 +78,7 @@ while True :
 
         update_product(new_name,new_price , name)
 
-        print("updated seccesfully :")
+        print("updated successfully :")
 
 
     else :
