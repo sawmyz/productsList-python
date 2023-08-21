@@ -23,7 +23,6 @@ def add_product(name , price) :
       val = (name, price)
       mycursor.execute(sql, val)
       mydb.commit()
-      print("add succesfully :")
 
 def remove_product(name) :
       sql = "DELETE FROM products WHERE name = %s"
